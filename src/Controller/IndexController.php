@@ -51,17 +51,17 @@ class IndexController extends AbstractController
         );
     }
 
-    public function editItem(Request $request, ShopItems $item )
-    {
-        $item = new ShopItems();
-        $form = $this->createForm( ItemType::class,$item);
-        $form->handleRequest($request);
-        if (($form->isSubmitted()) && ($form->isValid())){
-            $price = $item->getPrice();
-            $description = $item->getDescription();
-        }
-
-    }
+//    public function editItem(Request $request, ShopItems $item )
+//    {
+//        $item = new ShopItems();
+//        $form = $this->createForm( ItemType::class,$item);
+//        $form->handleRequest($request);
+//        if (($form->isSubmitted()) && ($form->isValid())){
+//            $price = $item->getPrice();
+//            $description = $item->getDescription();
+//        }
+//
+//    }
 
 
     /**
